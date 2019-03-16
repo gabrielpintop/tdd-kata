@@ -3,6 +3,10 @@ class Calculator:
         if string == "":
             return 0
         elif "," in string:
-            return int(string[0]) + int(string[2])
+            numbers = string.split(",")
+            sum = 0
+            for num in numbers:
+                sum = sum + int(num)
+            return sum
         else:
             return int(string)
