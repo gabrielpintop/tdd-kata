@@ -12,3 +12,6 @@ class CalculatorTest(TestCase):
     def test_add_stringWithNumber(self):
         self.assertEqual(Calculator().add("1"), 1, "One number")
         self.assertEqual(Calculator().add("2"), 2, "One number")
+
+    def test_add_stringWithTwoNumbers(self):
+        self.assertEqual(Calculator().add("1,3"), 4, "Two numbers")
