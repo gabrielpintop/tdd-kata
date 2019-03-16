@@ -1,3 +1,3 @@
 class Calculator:
-    def add(string):
-        pass
+    def add(self, string):
+        return 0
